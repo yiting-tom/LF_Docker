@@ -32,7 +32,7 @@
 
 <br>  
 
-### 3. 列出本機所有images
+### 3.:page_with_curl: 列出本機所有images
 `$ docker images [OPTIONS]`  
 | OPTION | INFO |
 | :-: | :-: |
@@ -43,7 +43,7 @@
 
 <br>
 
-### 4. 刪除本機images
+### 4. :wastebasket:刪除本機images
 `$ docker rmi [image1:tag1] [image2:tag2] [...]`  
 | OPTION | INFO |
 | :-: | :-: |
