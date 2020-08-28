@@ -4,6 +4,7 @@
 [Docker的核心概念](#concept)
 <hr>
 # <span id="concept">Docker的核心概念</span>
+
 ![docker_concept](https://hackernoon.com/images/4x5x32di.jpg)
 1. 為類似VM的
 
