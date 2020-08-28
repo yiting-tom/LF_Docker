@@ -13,7 +13,7 @@
 
 ## <span id='images'>images</span>
 
-### 1.  在[docker hub](https://hub.docker.com/)上搜尋images
+### 1.  :mag: 在[Docker hub](https://hub.docker.com/)上搜尋images
 `$ docker search [OPTIONS] [image:tag]`
 
 | OPTION | INFO |
@@ -24,7 +24,7 @@
 
 <br>
 
-### 2. 將images從[Docker Hub](https://hub.docker.com/)下載至本機
+### 2. :arrow_down: 將images從[Docker Hub](https://hub.docker.com/)下載至本機
 `$ docker pull [image1:tag1] [image2:tag2][...]`  
 | OPTION | INFO |
 | :-: | :-: |
@@ -50,7 +50,8 @@
 | -f | 強制刪除 |
 | --no-prune | 不刪除沒有tag的parent images |
 
-<font size=2>:sparkles:刪除所有本機images
+<font size=2>:sparkles:刪除所有本機images \
+`$ docker rmi $(docker images -qa)` \
 `$ docker rmi $(docker images -qa)`
 </font>
 
