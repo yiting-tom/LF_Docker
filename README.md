@@ -9,11 +9,11 @@
 > [ii. containers](#containers)
 ***
 
-### <span id="command">常用指令</span>
+# <span id="command">常用指令</span>
 
-#### <span id='images'>images</span>
+## <span id='images'>images</span>
 
-##### 1.  在[docker hub](https://hub.docker.com/)上搜尋images
+### 1.  在[docker hub](https://hub.docker.com/)上搜尋images
 `$ docker search [OPTIONS] [image:tag]`
 
 | OPTION | INFO |
@@ -24,7 +24,7 @@
 
 <br>
 
-##### 2. 將images從[Docker Hub](https://hub.docker.com/)下載至本機
+### 2. 將images從[Docker Hub](https://hub.docker.com/)下載至本機
 `$ docker pull [image1:tag1] [image2:tag2][...]`  
 | OPTION | INFO |
 | :-: | :-: |
@@ -32,7 +32,7 @@
 
 <br>  
 
-##### 3. 列出本機所有images
+### 3. 列出本機所有images
 `$ docker images [OPTIONS]`  
 | OPTION | INFO |
 | :-: | :-: |
@@ -43,7 +43,7 @@
 
 <br>
 
-##### 4. 刪除本機images
+### 4. 刪除本機images
 `$ docker rmi [image1:tag1] [image2:tag2] [...]`  
 | OPTION | INFO |
 | :-: | :-: |
@@ -57,8 +57,8 @@
 <br>
 
 
-### <span id="concept">簡介</span>
-##### 1. <span id="what-is-docker">What is Docker?</span>
+# <span id="concept">簡介</span>
+## 1. <span id="what-is-docker">What is Docker?</span>
 
    
 ![docker_concept](https://hackernoon.com/images/4x5x32di.jpg)
