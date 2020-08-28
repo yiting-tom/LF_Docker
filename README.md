@@ -95,7 +95,7 @@
 <br>
 
 ### 3. :page_with_curl: 列出正在運行的container
-`$docker ps [OPTIONS]`
+`$ docker ps [OPTIONS]`
 
 | OPTION | INFO |
 | :-: | :-: |
@@ -120,6 +120,7 @@
 <br>
 
 ### 5. :stop_button: 停止container
+`$ docker stop [OPTIONS] [container1] [container2] [...]`
 | METHOD | INFO |
 | :-: | :-: |
 | -t='秒數' | 倒數n秒後停止(default:10) |
@@ -135,7 +136,7 @@
 <br>
 
 ### 7. :wastebasket: 刪除已停止的container
-`$ docker rm [OPTIONS] [continer1] [container2]`
+`$ docker rm [OPTIONS] [continer1] [container2] [...]`
 | METHOD | INFO |
 | :-: | :-: |
 | -f | 強制刪除進行中的container |
