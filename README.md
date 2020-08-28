@@ -71,7 +71,6 @@
 
 :warning: 若image不存在於本機中，Docker會直接從[Docker Hub](https://hub.docker.com) [:arrow_down:Pull](#images)至本機
 
-
 <font size=2>\
 :sparkles: -t 時常與 -i 一起使用(-it) \
 `$ docker run -it centos`
@@ -115,12 +114,33 @@
 
 | METHOD | INFO |
 | :-: | :-: |
-|`$ exit` | 結束&退出 |
+| `$ exit` | 結束&退出 |
 | <kbd>CTRL</kbd>+<kbd>q</kbd>+<kbd>p</kbd> | 不結束&退出 |
 
 <br>
 
 ### 5. :stop_button: 停止container
+| METHOD | INFO |
+| :-: | :-: |
+| -t='秒數' | 倒數n秒後停止(default:10) |
+
+<br>
+
+### 6. :knife: 強制停止container
+`$ docker kill [OPTIONS] [container1] [container2] [...]`
+| OPTION | INFO |
+| :-: | :-: |
+| -s='SIGNAL' | 傳送SIGNAL給container |
+
+<br>
+
+### 7. :wastebasket: 刪除已停止的container
+`$ docker rm [OPTIONS] [continer1] [container2]`
+| METHOD | INFO |
+| :-: | :-: |
+| -f | 強制刪除進行中的container |
+| -l | 刪除特定link |
+| -v | 刪除關於此container的匿名volumes |
 
 <br>
 
