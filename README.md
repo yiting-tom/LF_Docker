@@ -49,6 +49,9 @@
 | :-: | :-: |
 | -f | 強制刪除 |
 | --no-prune | 不刪除沒有tag的parent images |
+<font size=2>:sparkles:刪除所有本機images
+`$ docker rmi $(docker images -qa)`
+</font>
 
 <br>
 
