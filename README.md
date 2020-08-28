@@ -58,8 +58,8 @@
 
 ## <span id='container'>container</span>  
 
-### 1. ▶️ 創建並啟動container
-`$ docker run [OPTIONS] [images:tag] [COMMAND] [args]`
+### 1. ️:runner: 創建並啟動container
+`$ docker run [OPTIONS] [image:tag] [COMMAND] [args]`
 | OPTION | INFO |
 | :-: | :-: |
 | --name='名字' | 指定container名字 |
@@ -68,6 +68,9 @@
 | -d | 背景模式運行 |
 | -P | 隨機分配映射port |
 | -p | 指定映射port |
+
+:warning: 若image不存在於本機中，Docker會直接從[Docker Hub](https://hub.docker.com) [:arrow_down:Pull](#images)至本機
+
 
 <font size=2>\
 :sparkles: -t 時常與 -i 一起使用(-it) \
@@ -80,7 +83,44 @@
 `cPort`
 </font>
 
+<br>
 
+### 2. ▶ 啟動container
+`$docker start [OPTIONS] [container]`
+
+| OPTION | INFO |
+| :-: | :-: |
+| -a | 連接container的STDOUT/STDERR |
+| -i | 連接container的STDIN |
+
+<br>
+
+### 3. :page_with_curl: 列出正在運行的container
+`$docker ps [OPTIONS]`
+
+| OPTION | INFO |
+| :-: | :-: |
+| -a | 列出所有container (包含已結束) |
+| -n='數量' | 列出最後n個 |
+| -l | 列出最後一個 |
+| -q | 只顯示id |
+| -s | 顯示文件大小 |
+| --no-trunc | 完整顯示 |
+
+
+<br>
+
+### 4. :door:️ 退出當前container
+- 於當前Terminal輸入
+
+| METHOD | INFO |
+| :-: | :-: |
+|`$ exit` | 結束&退出 |
+| <kbd>CTRL</kbd>+<kbd>q</kbd>+<kbd>p</kbd> | 不結束&退出 |
+
+<br>
+
+### 5. :stop_button: 停止container
 
 
 # <span id="concept">簡介</span>
