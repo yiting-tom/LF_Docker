@@ -14,7 +14,7 @@
 #### <span id='images'>images</span>
 
 ##### 1.  在[docker hub](https://hub.docker.com/)上搜尋images
-`$ docker search [OPTIONS] [image_name]:[tag (default=latest)]`
+`$ docker search [OPTIONS] [image:tag]`
 
 | OPTION | INFO |
 | :-: | :-: |
@@ -25,7 +25,7 @@
 <br>
 
 ##### 2. 將images從[Docker Hub](https://hub.docker.com/)下載至本機
-`$ docker pull [image]:[tag (default=latest)]`  
+`$ docker pull [image1:tag1] [image2:tag2][...]`  
 | OPTION | INFO |
 | :-: | :-: |
 | -f | 使用[過濾器](https://docs.docker.com/engine/api/v1.40/#operation/ImageList) |
@@ -43,6 +43,14 @@
 
 <br>
 
+##### 4. 刪除本機images
+`$ docker rmi [image1:tag1] [image2:tag2] [...]`  
+| OPTION | INFO |
+| :-: | :-: |
+| -f | 強制刪除 |
+| --no-prune | 不刪除沒有tag的parent images |
+
+<br>
 
 
 ### <span id="concept">簡介</span>
