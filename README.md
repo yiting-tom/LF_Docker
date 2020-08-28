@@ -8,25 +8,32 @@
 > [i. images](#images)  
 > [ii. containers](#containers)
 ***
-### <span id="images">常用指令</span>
-##### `$ docker search [OPTIONS] [image_name]:[version(default=latest)]`
-| OPTION | INFO |
-| :-: | :-: |
-| -s='星數' | 星星數量需大於多少 |
-| --no-trunc | 列出完整訊息 |
-| --automated | 只列出 automated build 的 image |
 
-<br>
+### <span id="command">常用指令</span>
 
-##### `$ docker images [OPTIONS]`  
-| OPTION | INFO |
-| :-: | :-: |
-| -q | 只列出 image id |
-| -a | 列出中間層 images |
-| --digests | 列出摘要訊息 |
-| --no-trunc | 列出完整訊息 |
+#### <span id='images'>images</span>
+> 
+> ##### `$ docker search [OPTIONS] [image_name]:[tag (default=latest)]`
+> | OPTION | INFO |
+> | :-: | :-: |
+> | -s='星數' | 星星數量需大於多少 |
+> | --no-trunc | 列出完整訊息 |
+> | --automated | 只列出 automated build 的 image |
+> 
+> <br>
+> 
+> ##### `$ docker images [OPTIONS]`  
+> | OPTION | INFO |
+> | :-: | :-: |
+> | -q | 只列出 image id |
+> | -a | 列出中間層 images |
+> | --digests | 列出摘要訊息 |
+> | --no-trunc | 列出完整訊息 |
+> 
+> <br>
+> 
+> ##### `$ docker pull [image]:[tag (default=latest)]`  
 
-<br>
 
 <hr>  
 
