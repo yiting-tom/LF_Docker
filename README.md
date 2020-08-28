@@ -15,7 +15,8 @@
 | -s [星數] | 星星數量需大於多少 |
 | --no-trunc | 列出完整訊息 |
 | --automated | 只列出 automated build 的 image |
-<br>
+<br>  
+
 ##### `$ docker images [OPTIONS]`  
 | OPTION | INFO |
 | :-: | :-: |
