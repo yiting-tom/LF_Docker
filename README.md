@@ -15,7 +15,9 @@
 | -s='星數' | 星星數量需大於多少 |
 | --no-trunc | 列出完整訊息 |
 | --automated | 只列出 automated build 的 image |
-<br>  
+
+<br>
+
 ##### `$ docker images [OPTIONS]`  
 | OPTION | INFO |
 | :-: | :-: |
@@ -23,11 +25,11 @@
 | -a | 列出中間層 images |
 | --digests | 列出摘要訊息 |
 | --no-trunc | 列出完整訊息 |
-<br>  
 
-
+<br>
 
 <hr>  
+
 ### <span id="concept">簡介</span>
 ##### 1. <span id="what-is-docker">What is Docker?</span>
 
