@@ -9,8 +9,14 @@
 > [ii. containers](#containers)
 ***
 ### <span id="images">常用指令</span>
-##### `docker images [OPTIONS]`
-
+##### `$ docker search [OPTIONS] [image_name]:[version(default=latest)]`
+| OPTION | INFO |
+| :-: | :-: |
+| -s [星數] | 星星數量需大於多少 |
+| --no-trunc | 列出完整訊息 |
+| --automated | 只列出 automated build 的 image |
+<br>
+##### `$ docker images [OPTIONS]`  
 | OPTION | INFO |
 | :-: | :-: |
 | -q | 只列出 image id |
@@ -20,6 +26,7 @@
 
 
 
+<hr>
 ### <span id="concept">簡介</span>
 ##### 1. <span id="what-is-docker">What is Docker?</span>
 
