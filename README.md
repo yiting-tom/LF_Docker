@@ -70,7 +70,7 @@
 | -p | 指定映射port |
 
 <font size=2>\
-:sparkles: -t 時常與 -i 一起使用(-it) 
+:sparkles: -t 時常與 -i 一起使用(-it) \
 `$ docker run -it `
 
 :sparkles: -p 有4種格式
