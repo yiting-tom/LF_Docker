@@ -68,13 +68,18 @@
 | -t | 使用輸入終端機 |
 | -P | 隨機分配映射port |
 | -p | 指定映射port |
-<font size=2>:sparkles: -t 時常與 -i 一起使用(-it) 
+
+<font size=2>\
+:sparkles: -t 時常與 -i 一起使用(-it) 
 `$ docker run -it `
+
 :sparkles: -p 有4種格式
-> `ip:h_Port:c_Port`
-> `ip::c_Port`
-> `h_Port:c_Port`
-> `cPort`
+```
+ip:h_Port:c_Port
+ip::c_Port
+h_Port:c_Port
+cPort
+```
 </font>
 
 
