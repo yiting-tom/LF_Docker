@@ -63,23 +63,21 @@
 | OPTION | INFO |
 | :-: | :-: |
 | --name='名字' | 指定container名字 |
-| -d | 背景模式運行 |
 | -i | 交互模式運行 |
 | -t | 使用輸入終端機 |
+| -d | 背景模式運行 |
 | -P | 隨機分配映射port |
 | -p | 指定映射port |
 
 <font size=2>\
 :sparkles: -t 時常與 -i 一起使用(-it) \
-`$ docker run -it `
+`$ docker run -it centos`
 
-:sparkles: -p 有4種格式
-```
-ip:h_Port:c_Port
-ip::c_Port
-h_Port:c_Port
-cPort
-```
+:sparkles: -p 有4種格式 \
+`ip:h_Port:c_Port` \
+`ip::c_Port` \
+`h_Port:c_Port` \
+`cPort`
 </font>
 
 
