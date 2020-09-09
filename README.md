@@ -4,8 +4,8 @@
 [A. 簡介](#concept)
 > [1. Docker 的誕生](#dockers-born)  
 > [2. Docker 的理念](#what-is-docker)  
-> [3. Docker 能幹嘛](#what-can-docker-do)  
-> [4. Docker 三元素](#three-elements)
+> [3. Docker 的優勢](#what-can-docker-do)  
+> [4. Docker 的組成](#three-elements)
 > 
 
 # <span id="concept">簡介</span>
@@ -16,10 +16,33 @@
 <hr> 
 
 ## 2. <span id="what-is-docker">Docker 的理念</span>
-![docker_concept](https://hackernoon.com/images/4x5x32di.jpg)
+> __"Build, Ship, Run, Any App Anywhere" 「一次封裝，隨處運行」__
+> Docker 在 Linux Container 的基礎上發展而來，並將 App 運行在 Docker Container 上，且 Docker Container 於任何系統上都是一致的，因此。。。
+> 
+> __「只需要配置一次環境，換到其他機器上就可一鍵部署」__ 😁
+> ![docker_concept](https://img.itw01.com/images/2017/11/30/11/0432_95AUpJ_GZXPEGJ.jpg!r800x0.jpg)
+<hr>
 
-## 3. <span id="what-is-docker">Docker 解決了什麼問題<span> 
+## 3. <span id="what-is-docker">Docker 的優勢<span> 
+> __Virture Machine (VM)__ 就是一種可攜帶環境的解決方案，
+> &nbsp; 但傳統 VM 的的缺點：
+> &nbsp; 1.佔用資源多 2.啟動超慢 3.步驟冗余
+> 
+> __Linux Containers (LXC)__ 是由 Linux 發展出的另一種虛擬化技術
+> &nbsp; LXC 與 VM 最大差別在於，LXC __不是模擬整個OS__，而是將 processes 隔離
+> &nbsp; 如此一來就可以將需要的環境、資源與設置等，封裝到一個 Container 中，
+> &nbsp; 需要哪項服務就使用哪個 Container，不必將整個OS一起包起來。
+> &nbsp; 系統因此變得高效、輕量，並保證在任何環境中都能提供相同的服務
+> 
+> ![docker_vs_vm](https://miro.medium.com/max/4932/1*tAAJ06mUHOwpRH7R5R9oeA.png)
+<hr>
 
-## 4. <span id="what-is-docker">Docker 三元素</span>
+## 4. <span id="what-is-docker">Docker 的組成</span>
+> #### __image :__ 
+> &nbsp; READONLY 的模板，被用來創建 Container，可被重複使用
+> #### __container :__
+> &nbsp; 可想像成一個簡易的 Linux 環境，可被 _run_ , _start_ , _stop_ , _rm_ 每個 Container 相互隔離，以保證不被彼此影響
+> #### __repository :__
+> &nbsp; 集中存放 image 的倉庫
 
 ## 5. <span id="what-is-docker">什麼是 Docker?</span>
