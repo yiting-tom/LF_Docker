@@ -49,10 +49,10 @@
 > - __container :__
 > 可想像成一個簡易的 Linux 環境，可被 _run_ , _start_ , _stop_ , _rm_ 每個 Container 相互隔離，以保證不被彼此影響
 > 
-> - __repository :__
+> - __repository :__ \
 > 集中存放 image 的倉庫
 > 
-> - __registry :__
+> - __registry :__ \
 > 存放 repository 的大倉庫
 > 
 > ![docker-architecture](https://wiki.aquasec.com/download/attachments/2854889/Docker_Architecture.png?version=1&modificationDate=1520172700553&api=v2)
