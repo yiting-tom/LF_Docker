@@ -44,20 +44,20 @@
 
 ## 4. <span id="what-is-docker">Docker 的組成</span>
 > - __image :__ 
-> READONLY 的模板，被用來創建 Container，可被重複使用
-<br>
+> READONLY 的模板，被用來創建 Container，可被重複使用 \
+> <br>
 > - __container :__
 > 可想像成一個簡易的 Linux 環境，可被 _run_ , _start_ , _stop_ , _rm_ 每個 Container 相互隔離，以保證不被彼此影響
-<br>
+> <br>
 > - __repository :__
 > 集中存放 image 的倉庫
-<br>
+> <br>
 > - __registry :__
 > 存放 repository 的大倉庫
-<br>
+> <br>
 > ![docker-architecture](https://wiki.aquasec.com/download/attachments/2854889/Docker_Architecture.png?version=1&modificationDate=1520172700553&api=v2)
 > 1. Docker 本身是一個管理引擎，將 Application 和環境配置封裝形成一個 image，通過這個 image 可以產生多個 container
-<br>
+> <br>
 > 2. 一個 container 運行一種服務，當需要使用某服務，就可以透過 Docker Client 創建一個相應的運行環境，並提供服務
 <hr>
 <br>
