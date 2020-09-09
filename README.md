@@ -10,15 +10,17 @@
 
 # <span id="concept">簡介</span>
 ## 1. <span id="dockers-born">Docker 的誕生</span>
-> __產品開發__ 與 __運營維護__ 間的協作，需要關心許多事件，其中包含了ＯＳ、環境、參數配置等等，其中只要一項不相同，就有可能導致預期外的事件發 :fire:
+> __產品開發__ 與 __運營維護__ 間的協作，需要關心許多事件 \
+> 其中包含了ＯＳ、環境、參數配置等等，其中只要一項不相同，就有可能導致預期外的事件發 :fire:
 
 :question: 那可不可以將 __專案與環境一起__ 傳到目標機器，再打開就好？
 <hr> 
 <br>
 
 ## 2. <span id="what-is-docker">Docker 的理念</span>
-> __"Build, Ship, Run, Any App Anywhere" 「一次封裝，隨處運行」__
-> Docker 在 Linux Container 的基礎上發展而來，並將 App 運行在 Docker Container 上，且 Docker Container 於任何系統上都是一致的，因此。。。
+> __"Build, Ship, Run, Any App Anywhere" 「一次封裝，隨處運行」__ \
+> Docker 在 Linux Container 的基礎上發展而來，並將 App 運行在 Docker Container 上\
+> 且 Docker Container 於任何系統上都是一致的，因此。。。
 > 
 > __「只需要配置一次環境，換到其他機器上就可一鍵部署」__ 😁
 > ![docker_concept](https://img.itw01.com/images/2017/11/30/11/0432_95AUpJ_GZXPEGJ.jpg!r800x0.jpg)
@@ -26,15 +28,15 @@
 <br>
 
 ## 3. <span id="what-is-docker">Docker 的優勢<span> 
-> __Virture Machine (VM)__ 就是一種可攜帶環境的解決方案，
-> &nbsp; 但傳統 VM 的的缺點：
-> &nbsp; 1.佔用資源多 2.啟動超慢 3.步驟冗余
+> __Virture Machine (VM)__ 就是一種可攜帶環境的解決方案\
+> &nbsp; 但傳統 VM 的缺點： \
+> &nbsp; 1.佔用資源多 2.啟動超慢 3.步驟冗余 \
 > 
-> __Linux Containers (LXC)__ 是由 Linux 發展出的另一種虛擬化技術
-> &nbsp; LXC 與 VM 最大差別在於，LXC __不是模擬整個OS__，而是將 processes 隔離
-> &nbsp; 如此一來就可以將需要的環境、資源與設置等，封裝到一個 Container 中，
-> &nbsp; 需要哪項服務就使用哪個 Container，不必將整個OS一起包起來。
-> &nbsp; 系統因此變得高效、輕量，並保證在任何環境中都能提供相同的服務
+> __Linux Containers (LXC)__ 是由 Linux 發展出的另一種虛擬化技術 \
+> &nbsp; LXC 與 VM 最大差別在於，LXC __不是模擬整個OS__，而是將 processes 隔離 \
+> &nbsp; 如此一來就可以將需要的環境、資源與設置等，封裝到一個 Container 中， \
+> &nbsp; 需要哪項服務就使用哪個 Container，不必將整個OS一起包起來。 \
+> &nbsp; 系統因此變得高效、輕量，並保證在任何環境中都能提供相同的服務 
 > 
 > ![docker_vs_vm](https://miro.medium.com/max/4932/1*tAAJ06mUHOwpRH7R5R9oeA.png)
 <hr>
