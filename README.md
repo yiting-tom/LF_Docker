@@ -14,6 +14,7 @@
 
 :question: 那可不可以將 __專案與環境一起__ 傳到目標機器，再打開就好？
 <hr> 
+<br>
 
 ## 2. <span id="what-is-docker">Docker 的理念</span>
 > __"Build, Ship, Run, Any App Anywhere" 「一次封裝，隨處運行」__
@@ -22,6 +23,7 @@
 > __「只需要配置一次環境，換到其他機器上就可一鍵部署」__ 😁
 > ![docker_concept](https://img.itw01.com/images/2017/11/30/11/0432_95AUpJ_GZXPEGJ.jpg!r800x0.jpg)
 <hr>
+<br>
 
 ## 3. <span id="what-is-docker">Docker 的優勢<span> 
 > __Virture Machine (VM)__ 就是一種可攜帶環境的解決方案，
@@ -36,6 +38,7 @@
 > 
 > ![docker_vs_vm](https://miro.medium.com/max/4932/1*tAAJ06mUHOwpRH7R5R9oeA.png)
 <hr>
+<br>
 
 ## 4. <span id="what-is-docker">Docker 的組成</span>
 > #### __image :__ 
@@ -44,5 +47,7 @@
 > &nbsp; 可想像成一個簡易的 Linux 環境，可被 _run_ , _start_ , _stop_ , _rm_ 每個 Container 相互隔離，以保證不被彼此影響
 > #### __repository :__
 > &nbsp; 集中存放 image 的倉庫
+<hr>
+<br>
 
 ## 5. <span id="what-is-docker">什麼是 Docker?</span>
