@@ -45,7 +45,7 @@
 ## 4. <span id="what-is-docker">Docker 的組成</span>
 > - __image :__ 
 > READONLY 的模板，被用來創建 Container，可被重複使用
-> <br>
+<br>
 > - __container :__
 > 可想像成一個簡易的 Linux 環境，可被 _run_ , _start_ , _stop_ , _rm_ 每個 Container 相互隔離，以保證不被彼此影響
 > <br>
