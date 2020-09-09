@@ -19,10 +19,11 @@
 
 ## 2. <span id="what-is-docker">Docker 的理念</span>
 > __"Build, Ship, Run, Any App Anywhere" 「一次封裝，隨處運行」__ \
-> Docker 在 Linux Container 的基礎上發展而來，並將 App 運行在 Docker Container 上\
+> Docker 在 Linux Container 的基礎上發展而來，並將 App 運行在 Docker Container 上
 > 且 Docker Container 於任何系統上都是一致的，因此。。。
 > 
 > __「只需要配置一次環境，換到其他機器上就可一鍵部署」__ 😁
+> 
 > ![docker_concept](https://img.itw01.com/images/2017/11/30/11/0432_95AUpJ_GZXPEGJ.jpg!r800x0.jpg)
 <hr>
 <br>
