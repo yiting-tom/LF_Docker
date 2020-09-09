@@ -4,7 +4,7 @@
 [A. 簡介](#concept)
 > [1. Docker 的誕生](#dockers-born)  
 > [2. Docker 的理念](#what-is-docker)  
-> [3. Docker 能幹嘛](#what-can-docker-do)  
+> [3. Docker 能幹嘛](#what-can-docker-do)  
 > [4. Docker 三元素](#three-elements)
 > 
 
