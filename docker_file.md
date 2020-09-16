@@ -51,7 +51,7 @@
 > | ENV | 設置 env 變數 |
 > | ADD | 將 host 文件複製並解壓至 container |
 > | COPY | 將 host 文件複製至 container |
-> | VOLUME | container 數據儲存 volume |
+> | VOLUME | container 數據儲存 volume |
 > | CMD | container 啟動時的要運行的命令 |
 > | ENTRYPOINT | 目的與 CMD 相同 |
 > | ONBUILD | 使用於繼承中，當 parent 被繼承後觸發 |
