@@ -11,7 +11,7 @@
 > [3. others](#others)
 
 # 常用指令
-> ![commands](https://raw.githubusercontent.com/philipz/docker_practice/master/_images/cmd_logic.png)
+![commands](https://raw.githubusercontent.com/philipz/docker_practice/master/_images/cmd_logic.png)
 
 
 ## <span id='images'>1. images</span>
