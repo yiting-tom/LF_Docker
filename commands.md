@@ -2,9 +2,9 @@
 
 > [i. images](#images)  
 > [ii. container](#container)  
-> [iii. volume](#volumn)
+> [iii. others](#others)
 
-***
+> ![commands](https://raw.githubusercontent.com/philipz/docker_practice/master/_images/cmd_logic.png)
 
 ## <span id='images'>images</span>
 
@@ -64,8 +64,9 @@
 > > | -d | 背景模式運行 |
 > > | -P | 隨機分配映射port |
 > > | -p | 指定映射port |
+> > | -v="dir/in/host/...:dir/in/container" | 連接Host, Container資料夾 |
 > > 
-> > :warning: 若image不存在於本機中，Docker會直接從[Docker Hub](https://hub.docker.com) [:arrow_down:Pull](#images)至本機
+> > > :warning: 若image不存在於本機中，Docker會直接從[Docker Hub](https://hub.docker.com) [:arrow_down:Pull](#images)至本機
 > > 
 > > > :sparkles: -t 時常與 -i 一起使用(-it) \
 > > > `$ docker run -it centos /bin/bash`  # /bin/bash 為執行指令
@@ -75,7 +76,13 @@
 > > > `ip::c_Port` \
 > > > `h_Port:c_Port` \
 > > > `cPort`
-> 
+> >
+> > > :sparkles: 使用權限限制
+> > > `docker run -it -v dir/in/host/...:dir/in/container:ro [container]`
+> >
+> > > :warning: 若出現 __cannot open directory .: Permission denied__
+> > > 可使用 --privileged=true 參數設置
+>
 > <br>
 > 
 > ### 2. ▶ 啟動container
@@ -135,7 +142,7 @@
 > > | -v | 刪除關於此container的匿名volumes |
 > <br>
 
-## <span>其他指令</span>
+## <span id="others">其他指令</span>
 
 > ### 1. 📰 列出Log
 > `$ docker logs [OPTIONS] [continer]`
@@ -165,15 +172,13 @@
 > > | -w="..." | 
 > > | --env="..."| 設定env var |
 > > | --user="..." | 隨機分配映射port |
-> 
-> :sparkles: exec 與 attach 差別於
+> >
+> > :sparkles: exec 與 attach 差別於
 > > exec : 是在 container 中打開新的tty，並可以啟動新的進程
 > > attach : 直接進入 container 啟動tty，不會啟動新的進程
+> <br>
 > 
 > ### 5. 📋 複製 Host/Container 資料到 Container/Host
 > `docker cp [dir/in/host...] [conatiner]:[dir/in/container]` 
 > `docker cp [conatiner]:[dir/in/container] [dir/in/host...]`
->
 > <br>
->
-> ![commands](https://raw.githubusercontent.com/philipz/docker_practice/master/_images/cmd_logic.png)
