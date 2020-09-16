@@ -13,6 +13,7 @@
 [C. Docker File](#docker-file)  
 > [1. Docker File 是什麼及如何使用](#what-is-df)
 > [2. Docker File 保留字指令](#df-tags)
+> [3. Docker File 撰寫](#df-script)
 
 # Docker File
 ![df-graph](https://quppler.com/wp-content/uploads/2019/03/DockerComponents.png)
@@ -54,3 +55,43 @@
 > | CMD | container 啟動時的要運行的命令 |
 > | ENTRYPOINT | 目的與 CMD 相同 |
 > | ONBUILD | 使用於繼承中，當 parent 被繼承後觸發 |
+
+## <span id='df-script'>3. Docker File 撰寫</span>
+> ``` docker
+> # using alpine be the base image
+> FROM alpine:3.9
+> # adding maintainer
+> MAINTAINER someone<someone@mail>
+> 
+> # install vim
+> RUN apk add vim
+> # copy host:./test_file to container:/test_file
+> ADD ./test_file /test_file
+> # config env arg TEST to /test_file
+> ENV TEST /test_file
+> 
+> # print success hint
+> RUN echo "--------- success ---------"
+> # execute ash shell
+> CMD /bin/ash
+> ```
+
+## <span id='build-check'>4. Docker File 實作</span>
+
+### Build to images
+> #### `$ docker build [options] [image:tag] [dockerfile]`
+> ![df_build](/screenshot/df_build.png)
+>
+> <br>
+>
+> #### `$ docker images`
+> ![df_images](/screenshot/df_images.png)
+>
+> <br>
+
+### Run on container
+> #### `$ docker run [options] [image:tag]`
+> ![df_run](/screenshot/df_run.png)
+>
+> ![df_check](/screenshot/df_check.png)
+> <br>
