@@ -1,14 +1,22 @@
-# <span id="command">常用指令</span>
+# 目錄
+[A. 簡介](#concept)
+> [1. Docker 的誕生](#dockers-born)  
+> [2. Docker 的理念](#what-is-docker)  
+> [3. Docker 的優勢](#what-can-docker-do)  
+> [4. Docker 的組成](#three-elements)
 
+[B. 常用指令](commands.md)  
 > [1. images](#images)  
 > [2. container](#container)  
 > [3. others](#others)
 
+# 常用指令
 > ![commands](https://raw.githubusercontent.com/philipz/docker_practice/master/_images/cmd_logic.png)
 
-## <span id='images'>images</span>
 
-> ### 1.  :mag: 在[Docker Hub](https://hub.docker.com/)上搜尋images
+## <span id='images'>1. images</span>
+
+> ### :mag: 在[Docker Hub](https://hub.docker.com/)上搜尋images
 > `$ docker search [OPTIONS] [image:tag]`
 > > | OPTION | INFO |
 > > | :-: | :-: |
@@ -18,7 +26,7 @@
 > 
 > <br>
 > 
-> ### 2. :arrow_down: 將images從[Docker Hub](https://hub.docker.com/)下載至本機
+> ### :arrow_down: 將images從[Docker Hub](https://hub.docker.com/)下載至本機
 > `$ docker pull [image1:tag1] [image2:tag2][...]`  
 > > | OPTION | INFO |
 > > | :-: | :-: |
@@ -26,7 +34,7 @@
 > 
 > <br>  
 > 
-> ### 3.:page_with_curl: 列出本機所有images
+> ### :page_with_curl: 列出本機所有images
 > `$ docker images [OPTIONS]`  
 > > | OPTION | INFO |
 > > | :-: | :-: |
@@ -37,24 +45,22 @@
 > 
 > <br>
 > 
-> ### 4. :wastebasket: 刪除本機images
+> ### :wastebasket: 刪除本機images
 > `$ docker rmi [image1:tag1] [image2:tag2] [...]`  
 > > | OPTION | INFO |
 > > | :-: | :-: |
 > > | -f | 強制刪除 |
 > > | --no-prune | 不刪除沒有tag的parent images |
 > > 
-> > <font size=2>:sparkles: 刪除所有本機images \
-> > `$ docker rmi $(docker images -qa)` \
-> > </font>
+> > :sparkles: `$ docker rmi $(docker images -qa)`
 > 
 > <br>
 
 ***
 
-## <span id='container'>container</span>  
+## <span id='container'>2. container</span>  
 
-> ### 1. ️:runner: 創建並啟動container
+> ### :runner: 創建並啟動container
 > `$ docker run [OPTIONS] [image:tag] [COMMAND] [args]`
 > > | OPTION | INFO |
 > > | :-: | :-: |
@@ -85,7 +91,7 @@
 >
 > <br>
 > 
-> ### 2. ▶ 啟動container
+> ### ▶ 啟動container
 > `$docker start [OPTIONS] [container]`
 > 
 > | OPTION | INFO |
@@ -95,7 +101,7 @@
 > 
 > <br>
 > 
-> ### 3. :page_with_curl: 列出正在運行的container
+> ### :page_with_curl: 列出正在運行的container
 > `$ docker ps [OPTIONS]`
 > > | OPTION | INFO |
 > > | :-: | :-: |
@@ -108,7 +114,7 @@
 > 
 > <br>
 > 
-> ### 4. :door:️ 退出當前container
+> ### :door:️ 退出當前container
 > - 於當前Terminal輸入
 > > | METHOD | INFO |
 > > | :-: | :-: |
@@ -117,7 +123,7 @@
 > > 
 > <br>
 >  
-> ### 5. :stop_button: 停止container
+> ### :stop_button: 停止container
 > `$ docker stop [OPTIONS] [container1] [container2] [...]`
 > > | METHOD | INFO |
 > > | :-: | :-: |
@@ -125,7 +131,7 @@
 > 
 > <br>
 > 
-> ### 6. :knife: 強制停止container
+> ### :knife: 強制停止container
 > `$ docker kill [OPTIONS] [container1] [container2] [...]`
 > > | OPTION | INFO |
 > > | :-: | :-: |
@@ -133,7 +139,7 @@
 > 
 > <br>
 > 
-> ### 7. :wastebasket: 刪除container
+> ### :wastebasket: 刪除container
 > `$ docker rm [OPTIONS] [continer1] [container2] [...]`
 > > | METHOD | INFO |
 > > | :-: | :-: |
@@ -142,9 +148,9 @@
 > > | -v | 刪除關於此container的匿名volumes |
 > <br>
 
-## <span id="others">其他指令</span>
+## <span id="others">3. 其他指令</span>
 
-> ### 1. 📰 列出Log
+> ### 📰 列出Log
 > `$ docker logs [OPTIONS] [continer]`
 > > | METHOD | INFO |
 > > | :-: | :-: |
@@ -153,16 +159,16 @@
 > > | --tail="n" | 顯示最後 n 筆 |
 > <br>
 >
-> ### 2. ⏳ 查看進程
+> ### ⏳ 查看進程
 > `$ docker top [continer]`
 >
 > <br>
 >
-> ### 3. 🔍 查看.yml file
+> ### 🔍 查看.yml file
 > `docker inspect [container]`
 > <br>
 > 
-> ### 4. 🖥 進入運行中的Conatiner
+> ### 🖥 進入運行中的Conatiner
 > `docker exec [options] [container] [command]`
 > > | OPTION | INFO |
 > > | :-: | :-: |
@@ -178,7 +184,7 @@
 > > attach : 直接進入 container 啟動tty，不會啟動新的進程
 > <br>
 > 
-> ### 5. 📋 複製 Host/Container 資料到 Container/Host
+> ### 📋 複製 Host/Container 資料到 Container/Host
 > `docker cp [dir/in/host...] [conatiner]:[dir/in/container]`
 > 
 > `docker cp [conatiner]:[dir/in/container] [dir/in/host...]`
