@@ -14,6 +14,7 @@
 > [1. Docker File 是什麼及如何使用](#what-is-df)  
 > [2. Docker File 保留字指令](#df-tags)  
 > [3. Docker File 撰寫](#df-script)  
+> [4. Docker File 部署](#df-script)  
 
 # Docker File
 ![df-graph](https://quppler.com/wp-content/uploads/2019/03/DockerComponents.png)
@@ -40,7 +41,7 @@
 ***
 
 ## <span id='df-tags'>2. Docker File 保留字指令</span>
-![cheat-sheet](https://extremeautomation.io/img/cheatsheets/cheat_sheet_docker_page_1.png)
+> ![cheat-sheet](https://extremeautomation.io/img/cheatsheets/cheat_sheet_docker_page_1.png)
 > | COMMAND | INFO |
 > | :-: | :-: |
 > | FROM | 基礎 image |
@@ -76,22 +77,22 @@
 > CMD /bin/ash
 > ```
 
-## <span id='build-check'>4. Docker File 實作</span>
+## <span id='build-check'>4. Docker File 部署</span>
 
-### Build to images
-> #### `$ docker build [options] [image:tag] [dockerfile]`
-> ![df_build](/screenshot/df_build.png)
->
-> <br>
->
-> #### `$ docker images`
-> ![df_images](/screenshot/df_images.png)
->
-> <br>
-
-### Run on container
-> #### `$ docker run [options] [image:tag]`
-> ![df_run](/screenshot/df_run.png)
->
-> ![df_check](/screenshot/df_check.png)
-> <br>
+> ### Build to images
+> > #### `$ docker build [options] [image:tag] [dockerfile]`
+> > ![df_build](/screenshot/df_build.png)
+> >
+> > <br>
+> >
+> > #### `$ docker images`
+> > ![df_images](/screenshot/df_images.png)
+> >
+> > <br>
+> 
+> ### Run on container
+> > #### `$ docker run [options] [image:tag]`
+> > ![df_run](/screenshot/df_run.png)
+> >
+> > ![df_check](/screenshot/df_check.png)
+> > <br>
