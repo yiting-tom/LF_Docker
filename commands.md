@@ -1,9 +1,9 @@
 # 目錄
 [A. 簡介](#concept)
-> [1. Docker 的誕生](#dockers-born)  
-> [2. Docker 的理念](#what-is-docker)  
-> [3. Docker 的優勢](#what-can-docker-do)  
-> [4. Docker 的組成](#three-elements)
+> [1. Docker 的誕生](#concept)  
+> [2. Docker 的理念](#concept)  
+> [3. Docker 的優勢](#concept)  
+> [4. Docker 的組成](#concept)
 
 [B. 常用指令](commands.md)  
 > [1. images](#images)  
