@@ -8,7 +8,7 @@
 
 ## <span id='images'>images</span>
 
-> ### 1.  :mag: 在[Docker hub](https://hub.docker.com/)上搜尋images
+> ### 1.  :mag: 在[Docker Hub](https://hub.docker.com/)上搜尋images
 > `$ docker search [OPTIONS] [image:tag]`
 > > | OPTION | INFO |
 > > | :-: | :-: |
@@ -66,7 +66,7 @@
 > > | -p | 指定映射port |
 > > | -v="dir/in/host/...:dir/in/container" | 連接Host, Container資料夾 |
 > > 
-> > > :warning: 若image不存在於本機中，Docker會直接從[Docker Hub](https://hub.docker.com) [:arrow_down:Pull](#images)至本機
+> > > :warning: 若image不存在於本機中，Docker會直接從 Docker Hub [:arrow_down: Pull](#images) 至本機
 > > 
 > > > :sparkles: -t 時常與 -i 一起使用(-it) \
 > > > `$ docker run -it centos /bin/bash`  # /bin/bash 為執行指令
@@ -178,7 +178,7 @@
 > > attach : 直接進入 container 啟動tty，不會啟動新的進程
 > <br>
 > 
-> ### 5. 📋 複製 Host/Container 資料到 Container/Host
+> ### 5. 📋 複製 Host/Container 資料到 Container/Host
 > `docker cp [dir/in/host...] [conatiner]:[dir/in/container]` 
 > `docker cp [conatiner]:[dir/in/container] [dir/in/host...]`
 > <br>
