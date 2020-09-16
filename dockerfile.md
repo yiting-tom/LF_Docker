@@ -29,7 +29,7 @@
 > > 3. __\#__ 表示註解
 > > 4. 每條指令都會 __創建新的 image 層__
 > 
-> ### docker 執行 docker file 的流程：
+> ### docker 執行 dockerfile 的流程：
 > > ![layer-by-layer](https://dzone.com/storage/temp/13029811-1581358050914.png)
 > > 1. 從基礎 images run 一個 container
 > > 2. 執行一條指令，並修改此 container
