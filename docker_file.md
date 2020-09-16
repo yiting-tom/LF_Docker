@@ -22,21 +22,20 @@
 ***
 
 ## <span id='what-is-df'>1. Docker File 是什麼及如何使用</span>
-#### `Docker File 是被用來建構(build) image 的 script file`
-
-#### 基礎知識：
-> 1. 每個保留字都是 __大寫__
-> 2. 每個保留字後面加上 __至少一個參數__
-> 3. __\#__ 表示註解
-> 4. 每條指令都會 __創建新的 image 層__
-
-#### docker 執行 docker file 的流程：
-> ![layer-by-layer](https://dzone.com/storage/temp/13029811-1581358050914.png)
-> 1. 從基礎 images run 一個 container
-> 2. 執行一條指令，並修改此 container
-> 3. 執行類似 docker commit，提交新的 image layer
-> 4. 基於新提交的 image 運行新的 container
-> 5. 重複步驟 3. 4. 直到所有指令都完成
+### `Docker File 是被用來建構(build) image 的 script file`
+> ### 基礎知識：
+> > 1. 每個保留字都是 __大寫__
+> > 2. 每個保留字後面加上 __至少一個參數__
+> > 3. __\#__ 表示註解
+> > 4. 每條指令都會 __創建新的 image 層__
+> 
+> ### docker 執行 docker file 的流程：
+> > ![layer-by-layer](https://dzone.com/storage/temp/13029811-1581358050914.png)
+> > 1. 從基礎 images run 一個 container
+> > 2. 執行一條指令，並修改此 container
+> > 3. 執行類似 docker commit，提交新的 image layer
+> > 4. 基於新提交的 image 運行新的 container
+> > 5. 重複步驟 3. 4. 直到所有指令都完成
 
 ***
 
