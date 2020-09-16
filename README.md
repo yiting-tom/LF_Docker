@@ -62,5 +62,3 @@
 > 2. 一個 container 運行一種服務，當需要使用某服務，就可以透過 Docker Client 創建一個相應的運行環境，並提供服務
 <hr>
 <br>
-
-## 5. <span id="what-is-docker">什麼是 Docker?</span>
