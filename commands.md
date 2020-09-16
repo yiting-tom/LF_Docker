@@ -1,8 +1,8 @@
 # <span id="command">常用指令</span>
 
-> [i. images](#images)  
-> [ii. container](#container)  
-> [iii. others](#others)
+> [1. images](#images)  
+> [2. container](#container)  
+> [3. others](#others)
 
 > ![commands](https://raw.githubusercontent.com/philipz/docker_practice/master/_images/cmd_logic.png)
 
