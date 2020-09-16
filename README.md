@@ -29,11 +29,11 @@
 <br>
 
 ## 3. <span id="what-is-docker">Docker 的優勢<span> 
-> - __Virture Machine (VM)__ 就是一種可攜帶環境的解決方案\
+> - [Virture Machine (VM)](https://en.wikipedia.org/wiki/Virtual_machine) 就是一種可攜帶環境的解決方案\
 > 但傳統 VM 的缺點： \
 > 1.佔用資源多 &nbsp; 2.啟動超慢 &nbsp; 3.步驟冗余  
 > 
-> - __Linux Containers (LXC)__ 是由 Linux 發展出的另一種虛擬化技術 \
+> - [Linux Containers (LXC)](https://linuxcontainers.org) 是由 Linux 發展出的另一種虛擬化技術 \
 > LXC 與 VM 最大差別在於，LXC __不是模擬整個OS__，而是將 processes 隔離 \
 > 如此一來就可以將需要的環境、資源與設置等，封裝到一個 Container 中， \
 > 需要哪項服務就使用哪個 Container，不必將整個OS一起包起來。 \
