@@ -14,7 +14,7 @@
 > [1. Docker File 是什麼及如何使用](#what-is-df)  
 > [2. Docker File 保留字指令](#df-tags)  
 > [3. Docker File 撰寫](#df-script)  
-> [4. Docker File 部署](#df-script)  
+> [4. Docker File 部署](#df-build)  
 
 # Docker File
 ![df-graph](https://quppler.com/wp-content/uploads/2019/03/DockerComponents.png)
@@ -77,7 +77,7 @@
 > CMD /bin/ash
 > ```
 
-## <span id='build-check'>4. Docker File 部署</span>
+## <span id='df-build'>4. Docker File 部署</span>
 
 > ### Build to images
 > > #### `$ docker build [options] [image:tag] [dockerfile]`
