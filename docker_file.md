@@ -57,7 +57,7 @@
 > | ONBUILD | 使用於繼承中，當 parent 被繼承後觸發 |
 
 ## <span id='df-script'>3. Docker File 撰寫</span>
-> ``` docker
+> ``` bash
 > # using alpine be the base image
 > FROM alpine:3.9
 > # adding maintainer
