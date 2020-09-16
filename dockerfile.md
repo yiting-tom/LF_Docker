@@ -10,19 +10,19 @@
 > [2. container](#container)  
 > [3. others](#others)
 
-[C. Docker File](#docker-file)  
-> [1. Docker File 是什麼及如何使用](#what-is-df)  
-> [2. Docker File 保留字指令](#df-tags)  
-> [3. Docker File 撰寫](#df-script)  
-> [4. Docker File 部署](#df-build)  
+[C. Dockerfile](#docker-file)  
+> [1. Dockerfile 是什麼及如何使用](#what-is-df)  
+> [2. Dockerfile 保留字指令](#df-tags)  
+> [3. Dockerfile 撰寫](#df-script)  
+> [4. Dockerfile 部署](#df-build)  
 
-# Docker File
+# Dockerfile
 ![df-graph](https://quppler.com/wp-content/uploads/2019/03/DockerComponents.png)
 
 ***
 
-## <span id='what-is-df'>1. Docker File 是什麼及如何使用</span>
-### `Docker File 是被用來建構(build) image 的 script file`
+## <span id='what-is-df'>1. Dockerfile 是什麼及如何使用</span>
+### `Dockerfile 是被用來建構(build) image 的 script file`
 > ### 基礎知識：
 > > 1. 每個保留字都是 __大寫__
 > > 2. 每個保留字後面加上 __至少一個參數__
@@ -39,7 +39,7 @@
 
 ***
 
-## <span id='df-tags'>2. Docker File 保留字指令</span>
+## <span id='df-tags'>2. Dockerfile 保留字指令</span>
 > ![cheat-sheet](https://extremeautomation.io/img/cheatsheets/cheat_sheet_docker_page_1.png)
 > | COMMAND | INFO |
 > | :-: | :-: |
@@ -56,7 +56,7 @@
 > | ENTRYPOINT | 目的與 CMD 相同 |
 > | ONBUILD | 使用於繼承中，當 parent 被繼承後觸發 |
 
-## <span id='df-script'>3. Docker File 撰寫</span>
+## <span id='df-script'>3. Dockerfile 撰寫</span>
 > ``` bash
 > # using alpine be the base image
 > FROM alpine:3.9
@@ -76,7 +76,7 @@
 > CMD /bin/ash
 > ```
 
-## <span id='df-build'>4. Docker File 部署</span>
+## <span id='df-build'>4. Dockerfile 部署</span>
 
 > ### Build to images
 > > #### `$ docker build [options] [image:tag] [dockerfile]`
