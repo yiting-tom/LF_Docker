@@ -179,6 +179,7 @@
 > <br>
 > 
 > ### 5. 📋 複製 Host/Container 資料到 Container/Host
-> `docker cp [dir/in/host...] [conatiner]:[dir/in/container]` 
+> `docker cp [dir/in/host...] [conatiner]:[dir/in/container]`
+> 
 > `docker cp [conatiner]:[dir/in/container] [dir/in/host...]`
 > <br>
