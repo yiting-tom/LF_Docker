@@ -66,6 +66,7 @@
 > # install vim
 > RUN apk add vim
 > # copy host:./test_file to container:/test_file
+> # !!!WARNING!!! the COPY/ADD command only can cp the Dockerfile directory's files
 > ADD ./test_file /test_file
 > # config env arg TEST to /test_file
 > ENV TEST /test_file
